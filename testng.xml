@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite">
+<!--<suite-files>-->
+<!--    <suite-file path="LoginPositiveScenarios.xml"/>-->
+<!--    <suite-file path="LoginNegativeScenarios.xml"/>-->
+<!--</suite-files>-->
+    <parameter name="browser" value=""/>
+    <test name="Register With Valid Data">
+        <classes>
+            <class name="testcases.TC01_Register">
+                <methods>
+                    <include name="registerNewUserWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Login With Valid Data">
+        <classes>
+            <class name="testcases.TC02_Login">
+                <methods>
+                    <include name="loginWithValidData_P"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
